@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: white;
+    padding: 0;
+    font: bold 12px Arial, Helvetica, sans-serif;
+  }
+  
+  .head {
+    height: 60px;
+    display: flex;
+    padding: 10px;
+    background-color: #FF6500;
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+  }
+  .right-panel{
+    border: 1px solid silver;
+    padding: 15px;
+    margin-right: 25px;
+    width: 30%;
+    border-radius: 10px;
+    height: 400px;
+  }
+  .right-panel-buttons{
+    display: flex;
+  }
+  .left-panel{
+    width: 70%;
+  }
+  
+  .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    max-height: 450px;
+    white-space: nowrap;
+  }
+  
+  .menu-item {
+    cursor: pointer;
+    display: flex;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 160px;
+    box-shadow: 0 4px 6px rgba(56, 56, 56, 0.1);
+    border: 1px solid rgb(219, 219, 219);
+    justify-content: space-between;
+  }
+  
+  .menu-item img {
+    width: 80px;
+    height: 90px;
+    order: 1;
+    align-self: flex-end;
+  }
+  
+  .pp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: -1;
+  }
+  .addItemNewbutton{
+    margin-right: 20px;
+    width: 50px;
+    height: 60px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  #pprix {
+    color: #FF6500;
+    font-size: large;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #order-list {
+    max-height: 280px;
+    overflow: auto;
+  }
+  
+  .order-item button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .filterBavbar {
+    text-align: center;
+    margin-right: 400px;
+  }
+  
+  .filterBavbar ul {
+    list-style-type: none;
+    padding: 13px;
+    margin: 0;
+  }
+  
+  .filterBavbar ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .filterBavbar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .filterBavbar ul li a:hover,
+  .filterBavbar ul li a.active {
+    background-color: #f0f0f0;
+  }
+  
+  .filterBavbar ul li a.active {
+    color: #333;
+  }
+  
+  .menu-item:hover {
+    border: 1px solid #FF6500;
+  }
+  
+  #validerbutton{
+    margin-top: 20px;
+    padding: 15px;
+    width: 150px;
+    background-color: #FF6500;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  #suppButton{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 15px;
+    width: 100px;
+    background-color: #ecd4d4;
+    border: none;
+    color: #ee4e53;
+    cursor: pointer;
+  }
+  
+ 
+  /* the modal */
+  .modal {
+    display: none;
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    border: 1px solid rgb(219, 219, 219);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 30px 30px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+    font-family: sans-serif;
+  }
+  
+  .modal form {
+    margin: auto;
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .in {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid silver;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 7px;
+  }
+  
+  #submit {
+    background-color: #FF6500;
+    margin-top: 10px;
+    padding: 20px;
+    width: 200px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 110px;
+  }
+  
+  #itemCategory {
+    color: white;
+    background-color: #FF6500;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+  }
+  
+  .modal h1 {
+    text-align: center;
+  }
+  
+  .modal .close {
+    color: white;
+    background-color: rgb(247, 67, 67);
+    width: 60px;
+    height: 30px;
+    border: none;
+    margin-left: 94%;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+ .total{
+  font-size: 20px;
+ }
+.icon{
+  width: 23px;
+  height: 23px;
+  margin-bottom: 0px;
+  margin-left: 3px;
+}
+#plus{
+font-size: 50px;
+}
+#plus:hover{
+  font-size: 55px;
+}
+
+@media (max-width: 700px) {
+ 
+  .right-panel{
+    width: 50%;
+    margin-right: 10px;
+  }
+  .left-panel{
+    width: 50%;
+  }
+  .right-panel-buttons{
+    display: block;
+  }
+  #order-list {
+    max-height: 200px;
+    overflow: auto;
+  }
+  .filterBavbar ul li a{
+    padding: 5px 5px;
+  }
+  .total{
+    margin-top: 15px;
+  }
+  .addItemNewbutton{
+    margin-top: 25px;
+  }
+
+}
+@media (max-width: 940px) {
+ 
+  .icon {
+    display: none;
+  }
+}
