@@ -4,9 +4,10 @@ MoodCoffee
 The Story
 
 I was learning React and wanted to build something that felt *real* not just another todo list.
-I thought: what does a café waiter actually need? A simple screen to take an order, see the total, and hand the customer a receipt. That became MoodCoffee.
-I started with a basic menu grid and a click to add interaction. Then I added category filtering. Then I figured out how to generate a PDF receipt using jsPDF. At some point I needed a way to pick images for new menu items  so I built a small custom dropdown component from scratch instead of pulling in a library.
-None of it is perfect. But every piece of it taught me something about React  state, props, components, effects, and how to make them talk to each other.
+I thought: what does a café waiter actually need? A simple screen to take an order, see the total, and hand the customer a receipt That became MoodCoffee.
+I started with a basic menu grid and a click to add interaction then I added category filtering. Then I figured out how to generate a PDF receipt using jsPDF.
+At some point I needed a way to pick images for new menu items  so I built a small custom dropdown component from scratch instead of pulling in a library None of it is perfect.
+But every piece of it taught me something about React  state, props, components, effects, and how to make them talk to each other.
 
 
 What It Does
